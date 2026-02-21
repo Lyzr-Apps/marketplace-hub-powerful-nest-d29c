@@ -1,0 +1,40 @@
+{
+  "agent_name": "Buyer Discovery Agent",
+  "agent_id": "69996084c066ed107671ac0b",
+  "description": "Interprets natural language buyer queries and generates structured search filters and ranked recommendations from available listings",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "interpreted_query": "string",
+    "filters": {
+      "category": "string",
+      "min_price": "number",
+      "max_price": "number",
+      "condition": "string",
+      "keywords": [
+        "string"
+      ]
+    },
+    "suggestions": [
+      "string"
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "interpreted_query": "sample string",
+    "filters": {
+      "category": "sample string",
+      "min_price": 0,
+      "max_price": 0,
+      "condition": "sample string",
+      "keywords": [
+        "sample string"
+      ]
+    },
+    "suggestions": [
+      "sample string"
+    ],
+    "summary": "sample string"
+  }
+}

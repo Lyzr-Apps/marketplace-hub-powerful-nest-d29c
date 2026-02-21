@@ -1,0 +1,58 @@
+{
+  "agent_name": "Buyer Discovery Agent",
+  "agent_id": "69996084c066ed107671ac0b",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "AgentResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "interpreted_query": {
+            "type": "string"
+          },
+          "filters": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string"
+              },
+              "min_price": {
+                "type": "number"
+              },
+              "max_price": {
+                "type": "number"
+              },
+              "condition": {
+                "type": "string"
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": ["category", "min_price", "max_price", "condition", "keywords"],
+            "additionalProperties": false
+          },
+          "suggestions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "summary": {
+            "type": "string"
+          }
+        },
+        "required": ["interpreted_query", "filters", "suggestions", "summary"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

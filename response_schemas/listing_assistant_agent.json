@@ -1,0 +1,39 @@
+{
+  "agent_name": "Listing Assistant Agent",
+  "agent_id": "69996083a4f57aa46126cbd2",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "AgentResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "enhanced_title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "highlights": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["enhanced_title", "description", "highlights", "keywords"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

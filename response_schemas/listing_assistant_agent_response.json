@@ -1,0 +1,28 @@
+{
+  "agent_name": "Listing Assistant Agent",
+  "agent_id": "69996083a4f57aa46126cbd2",
+  "description": "Takes seller-provided item details (title, category, condition, price) and generates an optimized, compelling product description with highlights and keywords to attract buyers",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "enhanced_title": "string",
+    "description": "string",
+    "highlights": [
+      "string"
+    ],
+    "keywords": [
+      "string"
+    ]
+  },
+  "example_response": {
+    "enhanced_title": "sample string",
+    "description": "sample string",
+    "highlights": [
+      "sample string"
+    ],
+    "keywords": [
+      "sample string"
+    ]
+  }
+}

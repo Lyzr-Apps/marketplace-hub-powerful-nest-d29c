@@ -1,0 +1,34 @@
+{
+  "agents": [
+    {
+      "agent_id": "69996083a4f57aa46126cbd2",
+      "name": "Listing Assistant Agent",
+      "node_id": "listing_assistant_agent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "has_tools": false,
+      "has_knowledge_base": false,
+      "has_voice": false,
+      "has_image_output": false,
+      "has_file_output": false,
+      "has_schedule": false
+    },
+    {
+      "agent_id": "69996084c066ed107671ac0b",
+      "name": "Buyer Discovery Agent",
+      "node_id": "buyer_discovery_agent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "top_p": 1.0,
+      "has_tools": false,
+      "has_knowledge_base": false,
+      "has_voice": false,
+      "has_image_output": false,
+      "has_file_output": false,
+      "has_schedule": false
+    }
+  ]
+}
